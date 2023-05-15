@@ -1,0 +1,67 @@
+.word-analyzer-outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background: var(--bg-gradient);
+  padding: 0.5rem;
+}
+
+.word-analyzer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+.word-analyzer-container h1 {
+  color: white;
+  text-align: center;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.word-frequency-item {
+  background: var(--bg-secondary-gradient);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.4rem;
+}
+
+.histogram-chart {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+
+.download-csv-button {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.download-csv-button button{
+  background: var(--bg-gradient);
+  border: 2px solid white;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  width: max-content;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+.download-csv-button button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid white;
+  transform: rotate(5deg);
+}

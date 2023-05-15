@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Project Structure
+This is a ReactJs Based project, it fetches a piece of text from the `https://www.terriblytinytales.com/test.txt` endpoint and breaks it down into various words and then does several things.
+* Displays all the words along with their frequency in a box form.
+* Displays the top 20 most occuring words into a histogram chart.
+* Enables the viewer to download the list of words in `.csv` format with the click of a button.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## It includes several re-usable components and utilty function to complete the functionality
+### Components
+* **StartScreen Component** - A interactive Welcome Screen to welcome the users and take them to the main Word Analyzer Component.
+* **WordAnalyzer Component** - A Fully functional Word Analyzer Component, which starts with fetching all the words and a list of top 20 most occuring words from the given endpoint using a utlity function `fetchData().` And then it lists the complete word list in a box form, thereafter it displays a chart of 20 most occuring words in the text available at the given endpoint. Finally it displays a export button to export the list of words
+* **Histogram Component** - Component responsible for histogram graph using the library `re-charts`.
 
-## Available Scripts
+### Utility functions
+* **fetchData()** - Visits the given endpoint and fetches the given text, performs several operations with the help of several lsub-functions inside it to promote code readability, and returns the list5 of words.
+* **exportCSV()** - A function which enables us to download the word data into a CSV file.
 
-In the project directory, you can run:
+## Libraries/Plugins Used :
+1. React Router Dom
+2. React Re-Charts
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployement : [https://sample.netlify.com](https://sample.netlify.com)
