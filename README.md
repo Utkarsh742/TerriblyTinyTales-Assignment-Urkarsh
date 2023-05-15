@@ -18,4 +18,4 @@ This is a ReactJs Based project, it fetches a piece of text from the `https://ww
 1. React Router Dom
 2. React Re-Charts
 
-## Deployement : [https://sample.netlify.com](https://sample.netlify.com)
+## Deployement : [https://utkarsh-at-tinytales.netlify.app/](https://utkarsh-at-tinytales.netlify.app/)
