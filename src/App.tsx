@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { StartScreen, WordAnalyzer } from './components';
+import { StartScreen, WordAnalyzer } from './Components';
 
 const App = () => {
   return (
